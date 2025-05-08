@@ -69,7 +69,7 @@ export function offscreenDrain(){
     poke = Math.max(0, poke - drain * 5);
     talk = Math.max(0, talk - drain * 5);
     saveStats();
-    // alert(food + ', ' + poke + ', ' + talk + ', ' + time + ', ' + drain + ', ' + now + ', ' + lastSave);
+    alert(food + ', ' + poke + ', ' + talk + ', ' + time + ', ' + drain + ', ' + now + ', ' + lastSave);
     updateDisplay();
     gameoverCheck();
 }
