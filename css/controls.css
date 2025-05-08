@@ -1,0 +1,20 @@
+
+.controls button {
+    color: rgb(29, 114, 86);
+    width: 120px;
+    height: auto;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: rgb(203, 203, 241);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+.controls button:hover {
+    background-color: rgb(174, 174, 223);
+    cursor: pointer;
+}
+.controls button:active {
+    background-color: rgb(130, 130, 190);
+}

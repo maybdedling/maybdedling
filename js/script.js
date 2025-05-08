@@ -1,5 +1,5 @@
 import { updateDisplay } from "./uiFuncs.js";
-import { resourceDrain, gameoverCheck} from "./gameLogic.js";
+import { resourceDrain, gameoverCheck, offscreenDrain, saveStats }  from "./gameLogic.js";
 
 
 //
@@ -7,4 +7,7 @@ import { resourceDrain, gameoverCheck} from "./gameLogic.js";
 //
 updateDisplay();
 gameoverCheck();
-resourceDrain(speed);
+offscreenDrain();
+resourceDrainID = setInterval(resourceDrain, speed*1000);
+saveStats();
+updateDisplay();

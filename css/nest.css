@@ -1,0 +1,31 @@
+
+.maybdedling-nest {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 400px; /* You can set a fixed width for the container */
+    height: 300px; /* Similarly, set a fixed height if required */
+}
+.maybdedling-nest .carpet {
+    bottom: 20px;
+    width: 400px;
+    position: absolute;
+    transition: none;
+    z-index: 1;
+}
+.maybdedling-nest .arrow {
+    left: 0px;
+    bottom: 70px;
+    width: 100px;
+    position: absolute;
+    transition: none;
+    z-index: 1;
+}
+.maybdedling-nest .maybded {
+    width: 200px;
+    height: 200px;
+    transition: none;
+    z-index: 2;
+}

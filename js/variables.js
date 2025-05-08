@@ -1,10 +1,15 @@
 let poke = parseInt(localStorage.getItem("poke")) || 50;
 let food = parseInt(localStorage.getItem("food")) || 50;
 let talk = parseInt(localStorage.getItem("talk")) || 50;
+let now =  Date.now();
+let lastSave = parseInt(localStorage.getItem("lastSave")) || now;
 
-let speed = 60; //in seconds
+
+let speed = 5000; //in seconds
+// let speed = 1; //in seconds
 let speechID;
 let resourceDrainID;
+let time = Math.floor((now - lastSave)/1000);
 
 const foodDisplay = document.getElementById("food-stat");
 const pokeDisplay = document.getElementById("poke-stat");
