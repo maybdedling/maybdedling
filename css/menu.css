@@ -1,0 +1,19 @@
+
+.menu-contain {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    right: 0;
+}
+.menu-contain .info {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    background-image: url("../img/question.png");
+    background-size: contain;
+}
+.menu-contain .info:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+}

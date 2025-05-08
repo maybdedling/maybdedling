@@ -5,50 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maybdedling</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/stats.css" />
+  <link rel="stylesheet" href="./css/nest.css" />
+  <link rel="stylesheet" href="./css/controls.css" />
+  <link rel="stylesheet" href="./css/alert.css" />
+  <link rel="stylesheet" href="./css/menu.css" />
 
 </head>
 <body>
     <div class = "back" id = "back"></div>
     <div class="container">
         <h1 class="labeled">your Maybdedling:</h1>
-    <div class = "maybdedling-stat">
-        <div class = "progress" id = "food-bar" name = "food-bar">
-            <div class = "progressbar" id = "food-stat" name = "food-stat"></div>
+        <div class = "maybdedling-stat">
+            <div class = "progress" id = "food-bar" name = "food-bar">
+                <div class = "progressbar" id = "food-stat" name = "food-stat"></div>
+            </div>
+            <div class = "progress" id = "poke-bar" name = "poke-bar">
+                <div class = "progressbar" id = "poke-stat" name = "poke-stat"></div>
+            </div>
+            <div class = "progress" id = "talk-bar" name = "talk-bar">
+                <div class = "progressbar" id = "talk-stat" name = "talk-stat"></div>
+            </div>
         </div>
-        <div class = "progress" id = "poke-bar" name = "poke-bar">
-            <div class = "progressbar" id = "poke-stat" name = "poke-stat"></div>
+        <div class = "maybdedling-nest">
+            <img class = "maybded" src="img/maybdedling.png" id = "maybded" name = "maybded" alt = "the maybdedling">
+            <img class = "carpet" src="img/carpet.png" id = "carpet" name = "carpet" alt = "the carpet">
+            <img class = "arrow" src="img/carpetLabel.png" id = "carpetarrow" name = "carpetarrow" alt = "the carpet">
+            <div class = "maybdedling-speech" id = "maybdedling-speech"></div>
         </div>
-        <div class = "progress" id = "talk-bar" name = "talk-bar">
-            <div class = "progressbar" id = "talk-stat" name = "talk-stat"></div>
+        <div class="controls">
+            <button id = "feed" name = "feed">feed</button>
+            <button id = "poke" name = "poke">poke</button>
+            <button id = "talk" name = "talk">talk</button>
         </div>
-    </div>
-    <div class = "maybdedling-nest">
-        <img class = "maybded" src="img/maybdedling.png" id = "maybded" name = "maybded" alt = "the maybdedling">
-        <img class = "carpet" src="img/carpet.png" id = "carpet" name = "carpet" alt = "the carpet">
-        <img class = "arrow" src="img/carpetLabel.png" id = "carpetarrow" name = "carpetarrow" alt = "the carpet">
-        <div class = "maybdedling-speech" id = "maybdedling-speech"></div>
-    </div>
-    <div class="controls">
-        <button id = "feed" name = "feed">feed</button>
-        <button id = "poke" name = "poke">poke</button>
-        <button id = "talk" name = "talk">talk</button>
-    </div>
-    <div class = "alert" id = "alert">
-        <div class = 'alert-message'>
-            <legend id = "joever-text">It's Joever</legend>
-            <button id = "restart-button">restart</button>
+        <div class = "alert" id = "alert">
+            <div class = 'alert-message'>
+                <legend id = "joever-text">It's Joever</legend>
+                <button id = "restart-button">restart</button>
+            </div>
         </div>
     </div>
-</div>
-<div class = "menu-contain" id = "menu-contain">
-    <button class = "info" id = "info"></button>
-</div>
-<div class = "alert" id = "setting">
-    <div class = "alert-message" id = "settings-pane">
-        <legend>settings</legend>
-        <button id = "close-settings">close</button>
+    <div class = "menu-contain" id = "menu-contain">
+        <button class = "info" id = "info"></button>
     </div>
-</div>
+    <div class = "alert" id = "setting">
+        <div class = "alert-message" id = "settings-pane">
+            <legend>settings</legend>
+            <button id = "close-settings">close</button>
+        </div>
+    </div>
 <script src="./js/variables.js"></script>
 <script type="module" src="./js/script.js"></script>
 <script type="module" src="./js/listeners.js"></script>

@@ -1,0 +1,31 @@
+
+.maybdedling-stat {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(180, 180, 180);
+    padding: 10px;
+    margin: 0;
+}
+.progress{
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+    border: 2px solid rgb(9, 102, 102);
+    border-radius: 10px;
+    background-color: rgb(9, 102, 102);
+    margin: 0;
+    padding: 0;
+}
+.progressbar {
+    height: 28px;
+    border: none;
+    border-radius: 10px;
+    width: 10%;
+    background-color: rgb(27, 163, 163);
+}
