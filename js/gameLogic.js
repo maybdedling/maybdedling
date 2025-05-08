@@ -49,7 +49,7 @@ export function restartGame() {
     talk = 50;
     saveStats();
     updateDisplay();
-    resourceDrain(speed);
+    resourceDrainID = setInterval(resourceDrain, speed*1000);
 }
 export function gameoverScreen(displayText) {
     alertPane.style.visibility = "visible";

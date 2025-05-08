@@ -6,11 +6,10 @@ let lastSave = parseInt(localStorage.getItem("lastSave")) || now;
 
 
 let speed = 5000; //in seconds
-// let speed = 1; //in seconds
+// let speed = 5000; //in seconds
 let speechID;
 let resourceDrainID;
 let time = Math.floor((now - lastSave)/1000);
-// alert(food + ', ' + poke + ', ' + talk + ', ' + time + ', ' + now + ', ' + lastSave);
 
 const foodDisplay = document.getElementById("food-stat");
 const pokeDisplay = document.getElementById("poke-stat");
